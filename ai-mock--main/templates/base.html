@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}AI Mock Interview{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>AI Mock Interview</h1>
+        <p>Your guide to acing interviews!</p>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/interview-section">Interview Section</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/help">Help</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AI Mock Interview Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

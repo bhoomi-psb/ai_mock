@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Interview Started{% endblock %}
+
+{% block content %}
+<section class="result-section">
+    <h2>Mock Interview Started!</h2>
+    <p>Thank you, {{ name }}.</p>
+    <p>Details:</p>
+    <ul>
+        <li>Email: {{ email }}</li>
+        <li>Interview Type: {{ interview_type }}</li>
+        <li>Experience Level: {{ experience }}</li>
+    </ul>
+</section>
+{% endblock %}
